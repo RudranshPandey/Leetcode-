@@ -20,4 +20,12 @@ int solve(int n){
     }
 };
 
-
+// it can be solved using fibbnocci series as well but will be the most optimal solution 
+int solve(int n){
+        // base case
+        if(n == 1 || n == 2){
+            return n;
+        }
+        else{
+            return solve(n-1)+solve(n-2)
+        }
